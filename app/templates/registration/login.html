@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Event Scheduler: Login</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/details.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <style>
+      td {
+        padding: 6px
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top font-center">
+      <center><h1>Event Scheduler: Login</h1></center>
+    </nav>
+
+	<table align="center" style="margin-top:100px">
+	<form method="post" action="/accounts/login/">
+	{% csrf_token %}
+	<tr>
+	    <td>{{ form.username.label_tag }}</td>
+	    <td>{{ form.username }}</td>
+	</tr>
+	<tr>
+	    <td>{{ form.password.label_tag }}</td>
+	    <td>{{ form.password }}</td>
+	</tr>
+	<tr>
+	</tr>
+	<tr>
+	    <td></td>
+	    <td>
+	        <input type="submit" value="Login" class="btn small-button" />
+	    </td>
+		</form>
+
+	</tr>
+    <tr>
+    	<td></td>
+	    <td>
+	        <a href="/signup" style="color:black"><button type="button" class="btn">Create new account</button></a>
+	    </td>
+    </tr>
+	</table>
+
+</body>
+</html>
