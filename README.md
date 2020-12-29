@@ -1,1 +1,1 @@
-# online_calendar
+# A django based online calendar
