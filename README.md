@@ -6,7 +6,7 @@ To run the project please follow the following steps:
 
 •Set Up Environment:Install virtualenv:  virtualenv venv
 
-•Activate Environment:winbdows : venv\Scripts\activate
+•Activate Environment : venv\Scripts\activate
 
 unix: source venv/bin/activate
 
