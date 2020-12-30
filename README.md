@@ -6,7 +6,9 @@ To run the project please follow the following steps:
 
 •Set Up Environment:Install virtualenv:  virtualenv venv
 
-•Activate Environment:venv\Scripts\activate
+•Activate Environment:winbdows : venv\Scripts\activate
+
+unix: source venv/bin/activate
 
 •Use the package manager pip to install required packages:pip install -r requirements.txt
 
